@@ -1,4 +1,4 @@
-# 04-pokemon-game
+# Pokedex
 
 ## Project setup
 ```

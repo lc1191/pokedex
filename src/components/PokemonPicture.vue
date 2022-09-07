@@ -1,10 +1,12 @@
 <template>
     <div class="pokemon-container">
-        <img :src="imgSrc"
+
+        <img v-if="!showPokemon"
+            :src="imgSrc"
             class="hidden-pokemon"
             alt="">
         
-        <img v-if="showPokemon"
+        <img v-else
             :src="imgSrc"
             class="fade-in"
             alt="">
@@ -29,7 +31,6 @@ export default {
     computed: {
         imgSrc() {
             return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${this.pokemonId}.svg`
-
         }
     }
 }

@@ -1,10 +1,10 @@
 <template>
 <h1 v-if="!pokemon">Espere por favor....</h1>
     <div v-else>
-        <h1> ¿Quien es este pokémon? </h1>
+        <h1> ¿Que pokémon es? </h1>
 
         <pokemon-picture 
-            :pokemon-id="pokemon.id" 
+            :pokemonId="pokemon.id" 
             :show-pokemon="showPokemon">
         </pokemon-picture>
 
@@ -70,5 +70,6 @@ export default {
 </script>
 
 <style>
-    
+
+  
 </style>
